@@ -1,0 +1,168 @@
+body{
+    background-color: aqua;
+    }
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(/indir.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+
+}
+
+/* header css */
+.header {
+    background-color:rgb(127, 255, 212);
+    display: flex;
+    height: 100px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    top:0px
+}
+.header .title h1 {
+    color: black;
+}
+.header .title h1 span {
+    color: brown;
+}
+.header .nav ul li {
+    list-style-type: none;
+}
+.header .nav ul li a{
+    text-decoration: none; 
+    margin-right: 10px;
+    color: blueviolet;
+    font-size: 20px;
+}
+.header .nav ul li a:hover {
+    color: black;
+    cursor: pointer;
+}
+/* header bitiş */
+
+/* ANA İÇERİK BAŞLANGIÇ */ 
+
+.main {
+   height: 50vh;
+   width: 100%;
+   margin-top: 4%;
+   display: flex;
+   justify-content: center;
+}
+.main .info {
+    height: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap: 20px;
+}
+.main .info h1{
+    color: rgb(254, 34, 0);
+}
+.main .info p{
+    color:black 
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.main .info button{
+    border: none;
+    background-color: blueviolet;
+    color:wheat;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.main .info button:hover{
+    cursor: pointer;
+    background-color: burlywood;
+}
+/* ANA İÇERİK BİTİŞ */ 
+
+/* TABLE BAŞLANGIÇ*/
+
+.table-container{
+    width: 80%;
+    margin: 20px auto;
+}
+.table-container table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+    border: 1px solid gray;
+}
+th{
+    background-color: gainsboro;
+}
+/* TABLE BİTİŞ*/
+
+/* FORM ALANI CSS */
+.form-container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+label {
+    font-weight: bold;
+}
+#ad,
+#email,
+#mesaj {
+    width: 99%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.btn{
+    background-color: rgb(191, 214, 191);
+    color:black;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: coral;
+    cursor: pointer;
+}
+/* FORM ALANI BİTİŞ CSS */
+
+/* footer alanı başlangıç*/
+.footer{
+    background-color:gray ;
+    color: antiquewhite;
+    height: 110px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* footer alanı bitiş */
+
+/* media sorgusu  */
+
+@media(max-width: 800px){
+    .header .nav {
+        display: none;
+    }
+
+    /* .header {
+        background-color: violet;
+ } */
+}
